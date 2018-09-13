@@ -13,19 +13,19 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure-Samples/azure-sdk-for-go-samples/internal/config"
-	"github.com/Azure-Samples/azure-sdk-for-go-samples/internal/util"
-	"github.com/Azure-Samples/azure-sdk-for-go-samples/resources"
+	"github.com/rockboyfor/azure-sdk-for-go-samples/internal/config"
+	"github.com/rockboyfor/azure-sdk-for-go-samples/internal/util"
+	"github.com/rockboyfor/azure-sdk-for-go-samples/resources"
 )
 
 const (
-	location = "westus2"
-	nsName   = "ehtest-04-ns"
-	hubName  = "ehtest-04-hub"
+	location = "chinaeast"
+	nsName   = "cyeventhubNS"
+	hubName  = "cyeventhubone "
 
 	// for storage.LeaserCheckpointer
-	storageAccountName   = "ehtest0001storage"
-	storageContainerName = "eventhubs0001leasercheckpointer"
+	storageAccountName   = "chenyestorage "
+	storageContainerName = "chenyecontainer"
 )
 
 // TestMain sets up the environment and initiates tests.
@@ -53,7 +53,7 @@ func ExampleEventHubs() {
 
 	// create group
 	var err error
-	var groupName = config.GenerateGroupName("EventHubs")
+	var groupName = config.GenerateGroupName("ChenYeRG")
 	config.SetGroupName(groupName)
 
 	_, err = resources.CreateGroup(ctx, config.GroupName())
