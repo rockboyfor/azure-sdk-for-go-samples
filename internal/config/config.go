@@ -20,7 +20,7 @@ var (
 	subscriptionID         string
 	locationDefault        string
 	authorizationServerURL string
-	cloudName              string = "AzurePublicCloud"
+	cloudName              string = "AzureChinaCloud"
 	useDeviceFlow          bool
 	keepResources          bool
 	groupName              string // deprecated, use baseGroupName instead
